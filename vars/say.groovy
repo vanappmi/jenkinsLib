@@ -7,7 +7,7 @@ def call(body) {
 
     // now build, based on the configuration provided
     node {
-        git url: "git@github.com:vanappmi/jenkinsLib.git"
+        git url: "https://github.com/vanappmi/jenkinsLib.git"
         sh "mvn install"
         mail to: "...", subject: "${config.name} plugin build", body: "..."
     }
